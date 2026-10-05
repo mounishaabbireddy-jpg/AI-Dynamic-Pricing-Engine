@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Sliders, Activity, Tag, HelpCircle, ArrowRight, Zap, TrendingUp, AlertTriangle } from 'lucide-react';
 
 export function Simulation() {

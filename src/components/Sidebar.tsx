@@ -1,4 +1,3 @@
-import React from 'react';
 import { LayoutDashboard, Sliders, Box, Users, BarChart2, Zap } from 'lucide-react';
 
 interface SidebarProps {
