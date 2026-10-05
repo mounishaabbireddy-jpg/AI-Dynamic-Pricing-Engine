@@ -3,6 +3,10 @@ import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
 import { Dashboard } from './pages/Dashboard';
 import { Simulation } from './pages/Simulation';
+import { Products } from './pages/Products';
+import { Competitors } from './pages/Competitors';
+import { Forecast } from './pages/Forecast';
+import { Insights } from './pages/Insights';
 
 function App() {
   const [activeTab, setActiveTab] = useState('simulation'); // Default to simulation for quick demo
@@ -17,13 +21,10 @@ function App() {
         <main className="flex-1 p-6 overflow-y-auto">
           {activeTab === 'dashboard' && <Dashboard />}
           {activeTab === 'simulation' && <Simulation />}
-          {/* Placeholders for other tabs */}
-          {['products', 'competitors', 'forecast', 'ai-insights'].includes(activeTab) && (
-             <div className="flex flex-col items-center justify-center h-full text-gray-500">
-               <h2 className="text-2xl font-bold mb-2">Coming Soon</h2>
-               <p>This module is under development for the hackathon.</p>
-             </div>
-          )}
+          {activeTab === 'products' && <Products />}
+          {activeTab === 'competitors' && <Competitors />}
+          {activeTab === 'forecast' && <Forecast />}
+          {activeTab === 'ai-insights' && <Insights />}
         </main>
       </div>
     </div>
